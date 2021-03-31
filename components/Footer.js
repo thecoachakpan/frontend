@@ -8,7 +8,7 @@ const Footer = () => {
 			<Container>
 				<Row>
 					<Col xs={12} md={3}>
-						<img src="images/logo.svg" alt="logo"/>
+						<img src="images/logo.svg" alt="paybybit logo"/>
 					</Col>
 					<Col xs={12} md={3}>
 						<h4 className="mb-4">PayByBit</h4>

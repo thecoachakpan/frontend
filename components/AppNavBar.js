@@ -1,6 +1,5 @@
 import React from "react"
 import { Navbar, Nav, Container, Button } from "react-bootstrap"
-import Image from 'next/image'
 import styles from '../styles/AppNavBar.module.css';
 
 const AppNavBar = () => {
@@ -8,7 +7,7 @@ const AppNavBar = () => {
 		<Navbar collapseOnSelect expand="lg" bg="white" variant="dark" className="shadow" fixed="top">
 			<Container>
 				<Navbar.Brand href="#home">
-					<Image src="/images/logo.svg" width="163.49" height="42.76" alt="pay small small"/>
+					<img src="/images/logo.svg" width="163.49" height="42.76" alt="pay small small"/>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">

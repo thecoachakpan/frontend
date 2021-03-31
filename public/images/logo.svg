@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="242.894" height="62.756" viewBox="0 0 242.894 62.756">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: #05101d;
+      }
+
+      .cls-1 {
+        font-size: 40px;
+        font-family: Poppins-SemiBoldItalic, Poppins;
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      .cls-2 {
+        fill: #12437d;
+      }
+
+      .cls-3 {
+        fill: #2680eb;
+      }
+    </style>
+  </defs>
+  <g id="Group_71" data-name="Group 71" transform="translate(-144 -107)">
+    <text id="Paybybit" class="cls-1" transform="translate(204.894 150)"><tspan x="0" y="0">Payby</tspan><tspan class="cls-2" y="0">bit</tspan></text>
+    <g id="Group_2" data-name="Group 2">
+      <g id="Group_1" data-name="Group 1" transform="translate(0 -7.396)">
+        <rect id="Rectangle_3" data-name="Rectangle 3" class="cls-3" width="27.258" height="19.968" rx="9.984" transform="translate(159.531 114.396)"/>
+        <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-3" width="27.258" height="19.968" rx="9.984" transform="translate(159.531 137.534)"/>
+      </g>
+      <rect id="Rectangle_5" data-name="Rectangle 5" class="cls-4" width="12.361" height="62.756" rx="6.181" transform="translate(144 107)"/>
+    </g>
+  </g>
+</svg>

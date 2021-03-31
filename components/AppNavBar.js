@@ -1,30 +1,29 @@
 import React from "react"
-import { Navbar, Nav, NavDropdown } from "react-bootstrap"
+import { Navbar, Nav, Container, Button } from "react-bootstrap"
+import styles from '../styles/AppNavBar.module.css';
 
 const AppNavBar = () => {
 	return (
-		<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-			<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-			<Navbar.Collapse id="responsive-navbar-nav">
-				<Nav className="mr-auto">
-					<Nav.Link href="#features">Features</Nav.Link>
-					<Nav.Link href="#pricing">Pricing</Nav.Link>
-					<NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-						<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-						<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-						<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-						<NavDropdown.Divider />
-						<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-					</NavDropdown>
-				</Nav>
-				<Nav>
-					<Nav.Link href="#deets">More deets</Nav.Link>
-					<Nav.Link eventKey={2} href="#memes">
-						Dank memes
-					</Nav.Link>
-				</Nav>
-			</Navbar.Collapse>
+		<Navbar collapseOnSelect expand="lg" bg="white" variant="dark" className="shadow" fixed="top">
+			<Container>
+				<Navbar.Brand href="#home">
+					<img src="/images/logo.svg" width="163.49" height="42.76" alt="pay small small"/>
+				</Navbar.Brand>
+				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+				<Navbar.Collapse id="responsive-navbar-nav">
+					<Nav className="mr-auto ml-0 ml-md-5">
+						<Nav.Link href="personal" className={`${styles.navlink} text-capitalize`}>Personal</Nav.Link>
+						<Nav.Link href="business" className={styles.navlink}>Business</Nav.Link>
+					</Nav>
+					<Nav>
+						<Nav.Link href="#deets" className={styles.navlink}>Shop</Nav.Link>
+						<Nav.Link href="#deets" className={styles.navlink}>Solutions</Nav.Link>
+						<Nav.Link href="#deets" className={styles.navlink}>Products</Nav.Link>
+						<Button variant="outline-primary" className={`${styles.signupButton} ml-0 ml-md-5`}>Sign Up</Button>
+						<Button variant="Light" className={styles.loginButton}>Log In</Button>
+					</Nav>
+				</Navbar.Collapse>
+			</Container>
 		</Navbar>
 	)
 }

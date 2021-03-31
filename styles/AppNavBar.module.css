@@ -1,0 +1,25 @@
+
+.navlink {
+	color: #000000 !important;
+	text-shadow: none !important;
+}
+
+.signupButton {
+	/* border: 1px solid #000000; */
+	background-color: #ffffff;
+	/* color: #000000; */
+	border-radius: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-right: 10px;
+	/* margin-left: 30px; */
+}
+
+.loginButton {
+	border: 1px solid #2680EB;
+	background-color: #2680EB;
+	color: #ffffff;
+	border-radius: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+}

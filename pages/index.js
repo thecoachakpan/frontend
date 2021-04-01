@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import { Col, Container, Row, Button, Card } from 'react-bootstrap'
+// @ts-ignore
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -81,7 +82,7 @@ export default function Home() {
 										Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
 										sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
 									</p>
-									<Button variant="outline-primary" className={styles.getstarted}>Get Started</Button>
+									<Button variant="outline-primary" className={`${styles.getstarted} mb-5`}>Get Started</Button>
 								</div>
 							</Col>
 							<Col>
@@ -184,7 +185,7 @@ export default function Home() {
 						</Row>
 						<Row className="mt-5">
 							<Col xs={12} md={4}>
-								<Card className={`${styles.card} shadow pt-3 pb-3`}>
+								<Card className={`${styles.card} shadow pt-3 pb-3 mb-3`}>
 									<Card.Body className="d-flex">
 										<div>
 											<img src="images/flexible-item1.png" className="img-fluid" width="300" alt="flexible payment"/>
@@ -201,13 +202,13 @@ export default function Home() {
 								</Card>
 							</Col>
 							<Col xs={12} md={4}>
-								<Card className={`${styles.card} shadow pt-3 pb-3`}>
+								<Card className={`${styles.card} shadow pt-3 pb-3 mb-3`}>
 									<Card.Body className="d-flex">
 										<div>
 											<img src="images/flexible-item2.png" className="img-fluid" width="300" alt="flexible payment"/>
 										</div>
 										<div className="pl-4">
-											<h3 className="text-capitalize">Wealth Management</h3>
+											<h3 className="text-capitalize">Manage Shopping</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
 												sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
@@ -218,13 +219,13 @@ export default function Home() {
 								</Card>
 							</Col>
 							<Col xs={12} md={4}>
-								<Card className={`${styles.card} shadow pt-3 pb-3`}>
+								<Card className={`${styles.card} shadow pt-3 pb-3 mb-3`}>
 									<Card.Body className="d-flex">
 										<div>
 											<img src="images/flexible-item3.png" className="img-fluid" width="300" alt="flexible payment"/>
 										</div>
 										<div className="pl-4">
-											<h3 className="text-capitalize">Wealth Management</h3>
+											<h3 className="text-capitalize">Safety And Security</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
 												sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
@@ -242,3 +243,7 @@ export default function Home() {
     </div>
   )
 }
+
+Home.layout = "default";
+
+export default Home;

@@ -1,0 +1,26 @@
+.authentication {
+	margin-top: 5rem;
+	padding-top: 3rem;
+	padding-bottom: 5rem;
+}
+
+.authentication h1 {
+	font-size: 2.5rem;
+	color: #2680EB;
+}
+
+.authentication .form {
+	max-width: 600px;
+}
+
+.authentication input {
+	height: 60px;
+}
+
+@media (max-width: 600px) {
+  .authentication {
+		margin-top: 1rem;
+		padding-top: 1rem;
+		padding-bottom: 3rem;
+	}
+}

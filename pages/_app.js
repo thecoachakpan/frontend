@@ -1,13 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css'
 
-import DefaultLayout from '../layouts/DefaultLayout';
+import LayoutWrapper from '../layouts/LayoutWrapper';
 
 function MyApp({ Component, pageProps }) {
+	
   return (
-		<DefaultLayout>
+		<LayoutWrapper>
 			<Component {...pageProps} />
-		</DefaultLayout>
+		</LayoutWrapper>
 	)
 }
 

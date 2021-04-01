@@ -4,6 +4,15 @@
 	text-shadow: none !important;
 }
 
+.navlink a:link {
+	text-decoration: none;
+}
+
+.navbar-dark .navbar-toggler {
+	color: #000;
+	border-color: #000;
+}
+
 .signupButton {
 	/* border: 1px solid #000000; */
 	background-color: #ffffff;
@@ -23,3 +32,4 @@
 	padding-left: 30px;
 	padding-right: 30px;
 }
+

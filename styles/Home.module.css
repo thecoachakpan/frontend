@@ -8,7 +8,7 @@
 } */
 
 .main {
-  padding: 5rem 0;
+  padding-top: 5rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -17,250 +17,479 @@
 }
 
 .hero {
-	/* padding: 100px 0px; */
-	text-align: left;
-	position: relative;
+  /* padding: 100px 0px; */
+  text-align: left;
+  position: relative;
 }
 
 .hero .getstarted {
-	padding: 15px 70px;
-	border-radius: 30px;
+  padding: 15px 70px;
+  border-radius: 30px;
 }
 
 .myBotton {
-	padding: 15px 70px;
-	border-radius: 30px;
-	background-color: #ffffff;
+  padding: 15px 70px;
+  border-radius: 30px;
+  background-color: #ffffff;
 }
 
 .mySmallBotton {
-	padding: 8px 70px;
-	border-radius: 30px;
-	background-color: #ffffff;
+  padding: 8px 70px;
+  border-radius: 30px;
+  background-color: #ffffff;
 }
 
 .hero .overlay {
-	height: 100%;
-	width: 100%;
-	/* background-color: red; */
-	position: absolute;
-	overflow: hidden;
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  position: absolute;
+  overflow: hidden;
 }
 
 .hero .overlay .rectangle {
-	width: 150px;
-	height: 300px;
-	/* background-color: rgba(185, 10, 185, 0.5); */
-	position: absolute;
-	left: 100px;
-	top: 50px;
+  width: 150px;
+  height: 300px;
+  /* background-color: rgba(185, 10, 185, 0.5); */
+  position: absolute;
+  left: 100px;
+  top: 50px;
 }
 
 .hero .overlay .rectangle .square {
-	width: 20px;
-	height: 20px;
-	min-width: 20px;
-	min-height: 20px;
-	margin-right: 20px;
-	background-color: rgb(176, 206, 255, 50%);
-	/* position: absolute; */
-	left: 100px;
-	top: 50px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  margin-right: 20px;
+  background-color: rgb(176, 206, 255, 50%);
+  /* position: absolute; */
+  left: 100px;
+  top: 50px;
 }
 
 .hero .overlay .circle {
-	width: 800px;
-	height: 800px;
-	border-radius: 50%;
-	background-color: rgb(176, 206, 255, 50%);
-	position: absolute;
-	right: 100px;
-	top: 50px;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background-color: rgba(226, 226, 228, 0.9);
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  opacity: 30%;
 }
 
 .hero .overlay .circle2 {
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
-	background-color: #ffffff;
-	position: absolute;
-	right: 700px;
-	top: 50px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  right: 700px;
+  top: 50px;
+}
+
+.hero .overlay .triangle {
+  width: 0;
+  height: 0;
+  border-top: 300px solid rgb(176, 206, 255, 20%);
+  border-left: 300px solid transparent;
+  position: absolute;
+  left: 500px;
+  top: 150px;
+  transform: rotate(-76.02deg);
+}
+
+.hero .imgOverlay {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  position: absolute;
+  overflow: hidden;
+}
+
+.hero .imgOverlay .shape1 {
+  position: absolute;
+  width: 45.56px;
+  height: 45.56px;
+  left: 20px;
+  top: 40px;
+  background: #004b86;
+  /* opacity: 60%; */
+  clip-path: polygon(25% 0, 99% 12%, 87% 90%, 0 52%);
+}
+
+.hero .imgOverlay .shape2 {
+  position: absolute;
+  width: 55.5px;
+  height: 43.97px;
+  left: 20px;
+  /* opacity: 40%; */
+  bottom: 40px;
+  background: #56a4e9;
+  /* transform: rotate(-77.29deg); */
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.hero .imgOverlay .shape3 {
+  position: absolute;
+  width: 46.36px;
+  height: 46.36px;
+  /* opacity: 50%; */
+  right: 20px;
+  top: 40px;
+  background: #0076b6;
+  /* transform: rotate(88.08deg); */
+  /* opacity: 50%; */
+  clip-path: polygon(0 0, 67% 39%, 100% 100%, 0% 100%);
+}
+
+.hero .imgOverlay .shape4 {
+  position: absolute;
+  width: 64.72px;
+  height: 50.19px;
+  right: 20px;
+  bottom: 40px;
+  background: #283593;
+  border-radius: 2px;
+  /* transform: rotate(62.78deg); */
+  /* opacity: 50%; */
+  clip-path: polygon(100% 0, 0 38%, 100% 100%);
 }
 
 .hero h1 {
-	padding-top: 80px;
-	font-size: 80px;
-	font-weight: bold;
-	color: #2680EB;
+  /* padding-top: 80px; */
+  /* margin-top: 80px; */
+  /* font-size: 50px;
+  font-weight: 500; */
+  /* line-height: 60px; */
+  /* color: #2680eb; */
+  color: #0f1c70;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 28px;
+  line-height: 1.3;
+  color: #011b33;
+  margin-bottom: 35px;
 }
 
 .hero h1 span {
-	color: #000000;
+  color: #000000;
 }
 
 .hero img {
-	margin: 70px 0px;
+  margin: 70px 0px;
+}
+
+.intro {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #eff5ff;
+}
+
+.intro h2 {
+  color: #0f1c70;
+}
+
+.why {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.why .overlay {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  position: absolute;
+  overflow: hidden;
+}
+
+.why .overlay .shape1 {
+  width: 150px;
+  height: 300px;
+  background-color: rgba(225, 239, 255, 0.3);
+  position: absolute;
+  left: -10px;
+  top: 50px;
+  transform: rotate(-25.02deg);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.why .overlay .shape2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(226, 226, 228, 0.9);
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  opacity: 30%;
+  transform: rotate(-25.02deg);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.why .overlay .shape3 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #effdff;
+  position: absolute;
+  right: 700px;
+  bottom: 20px;
+  clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    15% 0%,
+    85% 0%,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0% 85%
+  );
+  transform: rotate(-25.02deg);
+}
+
+.why .features {
+  background-color: #eff5ff;
+  padding: 30px;
+}
+
+.why .features .img {
+  height: 100px;
+}
+
+.try {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  position: relative;
+  overflow: hidden;
 }
 
 .howitworks {
-	background-color: #132F50;
-	position: relative;
+  background-color: #132f50;
+  position: relative;
 }
 
 .howitworks h2 {
-	color: #2680EB;
-	font-size: 80px;
-	font-weight: bold;
+  color: #2680eb;
+  font-size: 80px;
+  font-weight: bold;
 }
 
 .howitworks img {
-	position: absolute;
-	right: 50px;
+  position: absolute;
+  right: 50px;
 }
 
 .howitworks .overlay {
-	height: 100%;
-	width: 100%;
-	/* background-color: red; */
-	position: absolute;
-	overflow: hidden;
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  position: absolute;
+  overflow: hidden;
 }
 
 .howitworks .overlay .rectangle {
-	width: 150px;
-	height: 300px;
-	/* background-color: rgba(185, 10, 185, 0.5); */
-	position: absolute;
-	right: 30px;
-	bottom: 50px;
+  width: 150px;
+  height: 300px;
+  /* background-color: rgba(185, 10, 185, 0.5); */
+  position: absolute;
+  /* right: 30px; */
+  /* bottom: 50px; */
 }
 
 .howitworks .overlay .rectangle .square {
-	width: 20px;
-	height: 20px;
-	min-width: 20px;
-	min-height: 20px;
-	margin-right: 20px;
-	background-color: rgb(176, 206, 255, 50%);
-	/* position: absolute; */
-	left: 100px;
-	top: 50px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  margin-right: 20px;
+  background-color: rgb(176, 206, 255, 50%);
+  /* position: absolute; */
+  left: 100px;
+  top: 50px;
 }
 
 .howitworks .overlay .circle {
-	width: 800px;
-	height: 800px;
-	border-radius: 50%;
-	background-color: rgb(176, 206, 255, 10%);
-	position: absolute;
-	left:-500px;
-	top: 50px;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background-color: rgb(176, 206, 255, 10%);
+  position: absolute;
+  left: -500px;
+  top: 50px;
 }
 
 .howitworks .overlay .circle2 {
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
-	background-color: rgb(176, 206, 255, 10%);
-	position: absolute;
-	right: 700px;
-	top: 50px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgb(176, 206, 255, 10%);
+  position: absolute;
+  right: 700px;
+  top: 50px;
 }
 
 .howitworks .overlay .triangle {
-	width: 0;
-	height: 0;
-	border-top: 300px solid rgb(176, 206, 255, 10%);
-	border-left: 300px solid transparent;
-	position: absolute;
-	left: 500px;
-	top: 300px;
+  width: 0;
+  height: 0;
+  border-top: 300px solid rgb(176, 206, 255, 10%);
+  border-left: 300px solid transparent;
+  position: absolute;
+  left: 500px;
+  top: 300px;
 }
 
 .flexible {
-	color: #000000;
+  color: #000000;
 }
 
 .flexible h2 {
-	font-size: 60px;
-	margin-top: 40px;
-	color: #2680EB;
+  font-size: 60px;
+  margin-top: 40px;
+  color: #2680eb;
 }
 
 .flexible h2 span {
-	color: #000;
+  color: #000;
 }
 
 .flexible .card {
-	border-radius: 20px;
-	/* color: #000000; */
+  border-radius: 20px;
+  /* color: #000000; */
 }
 
 .flexible .overlay {
-	height: 100%;
-	width: 100%;
-	/* background-color: red; */
-	position: absolute;
-	overflow: hidden;
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  position: absolute;
+  overflow: hidden;
 }
 
 .flexible .overlay .rectangle {
-	width: 150px;
-	height: 300px;
-	/* background-color: rgba(185, 10, 185, 0.5); */
-	position: absolute;
-	right: 100px;
-	bottom: 50px;
+  width: 150px;
+  height: 300px;
+  /* background-color: rgba(185, 10, 185, 0.5); */
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
 }
 
 .flexible .overlay .rectangle .square {
-	width: 20px;
-	height: 20px;
-	min-width: 20px;
-	min-height: 20px;
-	margin-right: 20px;
-	background-color: rgb(176, 206, 255, 50%);
-	/* position: absolute; */
-	left: 100px;
-	top: 50px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  margin-right: 20px;
+  background-color: rgb(176, 206, 255, 50%);
+  /* position: absolute; */
+  left: 100px;
+  top: 50px;
 }
 
 .flexible .overlay .circle {
-	width: 800px;
-	height: 800px;
-	border-radius: 50%;
-	background-color: rgb(176, 206, 255, 40%);
-	position: absolute;
-	left:-500px;
-	top: -300px;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background-color: rgb(176, 206, 255, 40%);
+  position: absolute;
+  left: -500px;
+  top: -300px;
 }
 
 .flexible .overlay .circle2 {
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
-	background-color: rgb(176, 206, 255, 20%);
-	position: absolute;
-	right: 700px;
-	top: 50px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgb(176, 206, 255, 20%);
+  position: absolute;
+  right: 700px;
+  top: 50px;
 }
 
 .flexible .overlay .triangle {
-	width: 0;
-	height: 0;
-	border-top: 300px solid rgb(176, 206, 255, 50%);
-	border-left: 300px solid transparent;
-	position: absolute;
-	right: 10px;
-	bottom: 0px;
+  width: 0;
+  height: 0;
+  border-top: 300px solid rgb(176, 206, 255, 50%);
+  border-left: 300px solid transparent;
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
 }
 
+@media (max-width: 600px) {
+  .hero h1 {
+    margin-top: 50px;
+    font-size: 34px;
+  }
 
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero .overlay .circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: rgb(176, 206, 255, 50%);
+    position: absolute;
+    top: 450px;
+    /* right: 100px;
+    top: 50px; */
+  }
+  .hero .overlay .rectangle {
+    width: 150px;
+    height: 300px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+  }
+  .intro {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #eff5ff;
+  }
+  .why {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .why .overlay .shape1 {
+    opacity: 0%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero h1 {
+    margin-top: 50px;
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero .overlay .circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: rgb(176, 206, 255, 50%);
+    position: absolute;
+    top: 450px;
+    /* right: 100px;
+    top: 50px; */
+  }
+}
 
 /* ========================================================= */
-
-
 
 /* .title a {
   color: #0070f3;

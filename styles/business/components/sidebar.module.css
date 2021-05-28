@@ -1,0 +1,62 @@
+.sidebar {
+  width: 250px;
+  background-color: var(--light-blue);
+  padding: 15px 0px;
+  overflow: auto;
+}
+
+.sidebar .logo {
+  padding: 15px 25px;
+  padding-bottom: 30px;
+  /* text-align: center; */
+  border-bottom: 1px solid #95c3d5;
+}
+
+.sidebar .logo img {
+  max-width: 150px;
+}
+
+.sidebar .menus {
+  margin-top: 15px;
+  padding: 15px 25px;
+}
+
+.sidebar .menus .section a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.sidebar .menus .section .header {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+.sidebar .menus .section .menu {
+  padding: 5px 0px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .menus .section .menu .icon {
+  margin-right: 10px;
+  margin-bottom: 3px;
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}

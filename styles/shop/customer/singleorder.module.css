@@ -1,0 +1,197 @@
+.singleorder {
+  padding-bottom: 50px;
+}
+
+.singleorder h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--deep-blue);
+  margin-bottom: 0px;
+  margin-top: 30px;
+  line-height: 1;
+}
+
+.singleorder .header p {
+  font-size: 0.9rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.singleorder .details {
+  margin-top: 15px;
+  border-radius: 10px;
+  background-color: var(--lighter-blue);
+  /* height: 200px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.singleorder .details h2 {
+  font-size: 2rem;
+  color: var(--deep-blue);
+}
+
+.singleorder .details .progress {
+  display: flex;
+}
+
+.singleorder .details .progress .one,
+.singleorder .details .progress .two {
+  margin-right: 10px;
+}
+
+.singleorder .details .progress .one .value,
+.singleorder .details .progress .two .value,
+.singleorder .details .progress .three .value {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.singleorder .details .progress .one .name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #3c93f0;
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.singleorder .details .progress .two .name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #1dc7d3;
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.singleorder .details .image {
+  height: 150px;
+}
+
+.singleorder .details .image img {
+  height: 150px;
+}
+
+.singleorder .history {
+  margin-top: 15px;
+}
+
+.singleorder .history .header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.singleorder .history .body {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.singleorder .history .body .pay {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.singleorder .history .body .pay:hover {
+  background-color: var(--lighter-blue);
+}
+
+.singleorder .products {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.singleorder .products .product {
+  margin-top: 15px;
+  width: 14.28%;
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.singleorder .products .product .image {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.singleorder .products .product .image img {
+  max-height: 70px;
+}
+
+.singleorder .products .product .price {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.singleorder .products .product .price h5 {
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: var(--deep-blue);
+}
+
+.singleorder .products .product .price h6 {
+  font-size: 0.9rem;
+  margin-top: 0px;
+  text-decoration: line-through;
+  color: #808080;
+}
+
+.singleorder .products .product .name {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--deep-blue);
+  padding: 0px 10px;
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .singleorder .history .body .pay {
+    padding: 10px;
+    align-items: center;
+  }
+  .singleorder .history .body .pay h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+  }
+  .singleorder .history .body .pay h6 {
+    font-size: 0.8rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .singleorder .history .body .pay .dates {
+    font-size: 0.8rem;
+  }
+  .singleorder .products .product {
+    margin-top: 15px;
+    width: 33.3%;
+    border-right: 1px solid rgba(0, 0, 0, 0.125);
+  }
+}

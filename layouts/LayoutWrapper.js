@@ -1,9 +1,19 @@
-import DefaultLayout from "./DefaultLayout";
 import AuthLayout from "./AuthLayout";
+import BusinessLayout from "./BusinessLayout";
+import CustomerLayout from "./CustomerLayout";
+import DefaultLayout from "./DefaultLayout";
+import OnboardLayout from "./OnboardLayout";
+import ShopLandingLayout from "./ShopLandingLayout";
+import ShopLayout from "./ShopLayout";
 
 const layouts = {
   default: DefaultLayout,
-  auth: AuthLayout
+  auth: AuthLayout,
+  shop: ShopLayout,
+  shoplanding: ShopLandingLayout,
+  customer: CustomerLayout,
+  onboarding: OnboardLayout,
+  business: BusinessLayout,
 };
 
 const LayoutWrapper = (props) => {

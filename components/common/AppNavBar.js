@@ -1,11 +1,14 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { AiOutlineMenu } from "react-icons/ai";
 import { PrimaryButton } from ".";
 // @ts-ignore
 import styles from "../../styles/AppNavBar.module.css";
+import Drawer from "./Drawer";
 
 const AppNavBar = () => {
+  const [openDrawer, setOpenDrawer] = useState(false);
   return (
     <Navbar
       collapseOnSelect
@@ -25,26 +28,31 @@ const AppNavBar = () => {
             />
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle
-          className="text-primary"
-          aria-controls="responsive-navbar-nav"
+        <AiOutlineMenu
+          size="24"
+          className="d-lg-none"
+          onClick={() => setOpenDrawer(true)}
         />
+        <Drawer show={openDrawer} setOpenDrawer={setOpenDrawer} />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto ml-0 ml-md-5">
             <Nav.Link
               href="personal"
               className={`${styles.navlink} text-capitalize`}>
-              Personal
+              About Us
             </Nav.Link>
-            <Nav.Link href="business" className={styles.navlink}>
-              Business
+            <Nav.Link
+              href="personal"
+              className={`${styles.navlink} text-capitalize`}>
+              Policy
             </Nav.Link>
+            <Link href="/business" passHref>
+              <Nav.Link className={styles.navlink}>Business</Nav.Link>
+            </Link>
           </Nav>
           <Nav>
-            <Link href="/shop">
-              <Nav.Link href="/shop" className={styles.navlink}>
-                Shop
-              </Nav.Link>
+            <Link href="/shop" passHref>
+              <Nav.Link className={styles.navlink}>Shop</Nav.Link>
             </Link>
             <Nav.Link href="#deets" className={styles.navlink}>
               Solutions
@@ -52,15 +60,16 @@ const AppNavBar = () => {
             <Nav.Link href="#deets" className={styles.navlink}>
               Products
             </Nav.Link>
-            <Link href="/login">
+            <Link href="/login" passHref>
               <Nav.Link
-                href="/login"
                 className={`${styles.navlink} mr-4 ml-0 ml-md-3 mb-3 mb-md-0`}>
                 Login
               </Nav.Link>
             </Link>
-            <Link href="/signup" passHref>
-              <PrimaryButton>Create Account</PrimaryButton>
+            <Link href="/signup">
+              <a>
+                <PrimaryButton>Create Account</PrimaryButton>
+              </a>
             </Link>
           </Nav>
         </Navbar.Collapse>

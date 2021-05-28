@@ -1,5 +1,17 @@
 .primary {
-  background-color: #0f1c70;
-  border-color: #0f1c70;
+  background-color: #0f1c70 !important;
+  border-color: #0f1c70 !important;
   padding: 10px 40px;
+}
+
+.outlineprimary {
+  color: #0f1c70 !important;
+  background-color: #ffffff !important;
+  border-color: #0f1c70 !important;
+  padding: 10px 40px;
+}
+
+.outlineprimary:hover {
+  color: #0f1c70 !important;
+  background-color: var(--ligher-blue) !important;
 }

@@ -6,16 +6,20 @@ import styles from "../../styles/Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className={`${styles.footer} pt-5 pb-5`}>
+    <footer className={`${styles.footer} pt-5 pb-5 mt-5`}>
       <Container>
         <Row>
           <Col xs={12} md={3}>
-            <img
-              src="images/logo.png"
-              className="img-fluid"
-              width="200"
-              alt="paybybit logo"
-            />
+            <Link href="/" passHref>
+              <a>
+                <img
+                  src="/images/logo.png"
+                  className="img-fluid"
+                  width="200"
+                  alt="pinchpayer logo"
+                />
+              </a>
+            </Link>
             <p className={styles.bluep}>info@pinchpayer.com</p>
             <p className={styles.bluep}>
               +234 802 283 5496 <br />
